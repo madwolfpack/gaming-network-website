@@ -1,0 +1,38 @@
+nav {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color */
+    padding: 1rem 0; /* Vertical padding */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center the navigation items */
+  }
+  
+  li {
+    margin: 0 1rem; /* Spacing between navigation items */
+  }
+  
+  a {
+    color: white;
+    text-decoration: none; /* Remove underlines from links */
+    padding: 0.5rem 1rem; /* Padding around link text */
+    border-radius: 5px; /* Optional: Rounded corners for links */
+  
+    &:hover {
+      background-color: #555; /* Darker background on hover */
+    }
+  
+    &.active {
+      background-color: #2274A9; /* Highlight for the active link */
+    }
+  
+    /* You can add specific styling for the Dynmap link below if desired */
+    &[href*="map.playtsc.com"] {
+      /* Example: Make the background a different color */
+      /* background-color: #673ab7; */
+    }
+  }

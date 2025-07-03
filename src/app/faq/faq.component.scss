@@ -1,0 +1,81 @@
+.faq-page {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e; /* Dark background, adjust as needed */
+    color: #eee; /* Light text, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  
+    .hero {
+      text-align: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #333;
+      margin-bottom: 2rem;
+  
+      h1 {
+        color: #00bcd4; /* Accent color for heading, adjust as needed */
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+  
+      p {
+        color: #ccc;
+        line-height: 1.6;
+      }
+    }
+  
+    .questions {
+      padding: 1.5rem 0;
+  
+      .faq-item {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #333;
+  
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+  
+        h3 {
+          color: #ff4081; /* Secondary accent color for question, adjust as needed */
+          margin-bottom: 0.75rem;
+          font-size: 1.2rem;
+          letter-spacing: 0.03em;
+        }
+  
+        p {
+          color: #ccc;
+          line-height: 1.6;
+        }
+  
+        a {
+          color: #00bcd4;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    section {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #333;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      h2 {
+        color: #00bcd4; /* Accent color for section headings, adjust as needed */
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+    }
+  }

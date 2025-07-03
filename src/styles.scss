@@ -1,1 +1,137 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+
+/* Import any fonts you are using (e.g., from Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&family=Press+Start+2P&display=swap');
+
+/* Base Body Styles */
+body {
+  font-family: sans-serif;
+  color: #f0f0f0; /* Light text for dark backgrounds */
+  background-color: #121212; /* Dark overall background */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Typography - Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #00bcd4; /* Primary accent color for headings */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 3rem; /* Adjust as needed */
+}
+
+h2 {
+  font-size: 2.5rem; /* Adjust as needed */
+  color: #ff4081; /* Secondary accent color for subheadings */
+}
+
+h3 {
+  font-size: 1.8rem; /* Adjust as needed */
+}
+
+/* Links */
+a {
+  color: #00bcd4; /* Primary accent color for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #008ba7; /* Darker shade on hover */
+    text-decoration: underline;
+  }
+}
+
+/* Buttons - Primary Style (inheritable via class) */
+.primary-button {
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  background-color: #00bcd4;
+  color: #000;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #008ba7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-color: #00bcd4;
+  }
+
+  &:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.5); /* Add a custom focus style */
+  }
+}
+
+/* Buttons - Secondary Style (inheritable via class) */
+.secondary-button {
+  @extend .primary-button; /* Inherit base styles */
+  background-color: #ff4081;
+  color: #fff;
+
+  &:hover {
+    background-color: #d81b60;
+    border-color: #ff4081;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(255, 64, 129, 0.5); /* Custom focus for secondary */
+  }
+}
+
+/* Utility Classes (can be applied to various elements) */
+.text-accent-primary {
+  color: #00bcd4;
+}
+
+.text-accent-secondary {
+  color: #ff4081;
+}
+
+.section-dark {
+  background-color: #1e1e1e;
+  color: #eee;
+  padding: 2rem; /* Adjust padding as needed */
+}
+
+.section-light {
+  background-color: #2c2c2c;
+  color: #ccc;
+  padding: 2rem; /* Adjust padding as needed */
+}
+
+/* styles.scss */
+
+.section-dark {
+    background-color: #1e1e1e;
+    color: #eee;
+    padding: 2rem;
+  }
+  
+  .section-light {
+    background-color: #2c2c2c;
+    color: #ccc;
+    padding: 2rem;
+  }
+  
+  .section-gradient {
+    background: linear-gradient(135deg, #280154 0%, #000000 60%);
+    color: #f0f0f0;
+    padding: 2rem;
+  }
+
+/* Add more global styles as needed, such as for forms, lists, etc. */

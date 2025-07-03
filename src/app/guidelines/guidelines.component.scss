@@ -1,0 +1,71 @@
+.guidelines-page {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e; /* Dark background, adjust as needed */
+    color: #eee; /* Light text, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  
+    .hero {
+      text-align: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #333;
+      margin-bottom: 2rem;
+  
+      h1 {
+        color: #00bcd4; /* Accent color for heading, adjust as needed */
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+  
+      p {
+        color: #ccc;
+        line-height: 1.6;
+      }
+    }
+  
+    section {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #333;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      h2 {
+        color: #ff4081; /* Secondary accent color for subheadings, adjust as needed */
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+      }
+  
+      p {
+        color: #ccc;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+  
+      ul {
+        list-style: disc;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+  
+        li {
+          color: #eee;
+          line-height: 1.6;
+          margin-bottom: 0.5rem;
+        }
+      }
+  
+      a {
+        color: #00bcd4;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }

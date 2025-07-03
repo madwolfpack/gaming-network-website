@@ -1,0 +1,27 @@
+<h2>Our Game Servers</h2>
+<ul *ngIf="servers && servers.length > 0">
+  <li *ngFor="let server of servers">
+    <div class="server-info">
+      <strong>{{ server.name }}</strong>
+      <span class="game">({{ server.game }})</span>
+      - Status: <span class="status" [class.online]="server.status === 'online'" [class.offline]="server.status === 'offline'">{{ server.status | titlecase }}</span>
+    </div>
+    <span class="players">Players: {{ server.players }}/{{ server.maxPlayers }}</span>
+    <span class="ip-address">IP: {{ server.ipAddress }}</span>
+
+    <div *ngIf="server.motd" class="motd">
+      <strong>MOTD:</strong> {{ server.motd }}
+    </div>
+
+    <div class="version-icon" *ngIf="server.version">
+      <strong>Version:</strong> <span class="version">{{ server.version }}</span>
+    </div>
+
+    <div class="version-icon" *ngIf="server.favicon">
+      <strong>Icon:</strong> <img [src]="server.favicon" alt="Server Icon">
+    </div>
+
+    <p *ngIf="server.description">{{ server.description }}</p>
+  </li>
+</ul>
+<p *ngIf="!servers || servers.length === 0">No servers are currently available.</p>
